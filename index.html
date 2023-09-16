@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda de Contatos</title>
+    <link rel="stylesheet" href="./main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fugaz+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="./images/livros-de-contato.png"/>
+            <h1>Meus Contatos</h1>
+        </header>
+        <form id="form-agenda">
+            <input type="text" id="nome-contato" required placeholder="Nome do contato"/>
+            <input type="tel" id="numero-contato" required placeholder="Tel (xx) xxxx-xxxx" pattern="\([0-9]{2}\) [0-9]{5}-[0-9]{4}"/>
+            <input type="text" id="Obs" placeholder="Obs"/>
+            <button type="submit">Adicionar+</button>
+        </form>
+        <table cellspacing="0">
+            <thead>
+                <tr>
+                    <th>
+                        Nome do contato
+                    </th>
+                    <th>
+                        Número de Telefone
+                    </th>
+                    <th>
+                        Obs
+                    </th>
+                    <th>
+                        <img src="./images/chamada-telefonica.png"/>
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        ---
+                    </td>
+                    <td>
+                        (xx) xxxx-xxxx
+                    </td>
+                    <td>
+                        ---
+                    </td>
+                    <td>
+                        <a href="tel:+5541999999999">Ligar</a>
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+            </tfoot>
+        </table>
+    
+    </div>
+    <script src="./main.js"></script>
+</body>
+</html>
